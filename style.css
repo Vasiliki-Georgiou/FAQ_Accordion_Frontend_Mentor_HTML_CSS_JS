@@ -27,6 +27,7 @@ body {
   background-color: var(--light_pink);
   width: 100vw;
   height: 100vh;
+  margin-bottom: 25rem;
 }
 
 /* End of Common Styles */
@@ -37,13 +38,12 @@ header.faq-header {
   background: url(./images/background-pattern-mobile.svg) no-repeat center;
   background-size: 100% auto;
   background-position: center;
-  /* background-size: cover; */
 }
 
 main.faq-main {
   width: 28rem;
   background-color: var(--white);
-  margin: -10rem auto 0 auto;
+  margin: -6rem auto 0 auto;
   border-radius: 0.8rem;
   padding: 1.2rem;
 }
@@ -51,10 +51,19 @@ main.faq-main {
 .main-title {
   display: flex;
   align-items: center;
+  position: relative;
+  margin-bottom: 1.5rem;
 }
 
 .main-title svg {
   width: 2rem;
+}
+
+.main-title h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(20%, 20%);
 }
 
 .main-title .heading {
@@ -64,10 +73,13 @@ main.faq-main {
   margin-left: 2rem;
 }
 
+
 .question {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  margin-bottom: 0.6rem;
 }
 
 .question p,
@@ -76,18 +88,23 @@ main.faq-main {
 }
 
 .question p {
-  width: 75%;
+  width: 80%;
   font-size: 1.2rem;
   font-weight: 900;
 }
 
 .question svg {
   font-size: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-25%, -2%);
 }
 
 .answer p {
   font-size: 1.1rem;
   font-weight: 400;
+  margin-bottom: 1.5rem;
 }
 
 .underline {
@@ -96,3 +113,68 @@ main.faq-main {
   background-color: var(--grayish_purple);
   margin-bottom: 2rem;
 }
+
+/* Responsive */
+
+@media (min-width: 375px) and (max-width: 424px) {
+   html {
+    font-size: 73%;
+   }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  html {
+    font-size: 83%;
+   }
+
+   body {
+    margin-bottom: 35rem;
+   }
+
+   .question svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-25%, 10%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 85%;
+  }
+
+  body {
+    margin-bottom: 30rem;
+   }
+
+  header.faq-header {
+    height: 40vh;
+  }
+
+  main.faq-main {
+    width: 40rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 87%;
+  }
+
+  body {
+    margin-bottom: 35rem;
+   }
+
+  header.faq-header {
+    height: 40vh;
+    background: url(./images/background-pattern-desktop.svg) no-repeat center;
+    background-size: cover;
+  }
+
+  main.faq-main {
+    width: 38rem;
+  }
+}
+
+/* End of Responsive */
