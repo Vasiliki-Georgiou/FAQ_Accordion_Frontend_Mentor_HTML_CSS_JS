@@ -101,10 +101,18 @@ main.faq-main {
   transform: translate(-25%, -2%);
 }
 
+.answer {
+  display: none;
+}
+
 .answer p {
   font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
+}
+
+.show {
+  display: block;
 }
 
 .underline {
