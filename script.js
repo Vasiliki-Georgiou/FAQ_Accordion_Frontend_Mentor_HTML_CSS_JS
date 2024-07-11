@@ -14,13 +14,11 @@ const toggleAnswer = (event) => {
   answer.classList.toggle('show');
 
   // Changing the SVC icon to the minus one
-
   if (answer.classList.contains('show')) {
     event.target.outerHTML = minusSvg;
   } else {
     event.target.outerHTML = plusSvg;
   }
-
 }
 
 accordionButtons.forEach((item) => {

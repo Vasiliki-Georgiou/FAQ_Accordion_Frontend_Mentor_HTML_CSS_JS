@@ -27,7 +27,7 @@ body {
   background-color: var(--light_pink);
   width: 100vw;
   height: 100vh;
-  margin-bottom: 25rem;
+  margin-bottom: 10rem;
 }
 
 /* End of Common Styles */
@@ -135,10 +135,6 @@ main.faq-main {
     font-size: 83%;
    }
 
-   body {
-    margin-bottom: 35rem;
-   }
-
    .question svg {
     position: absolute;
     top: 0;
@@ -151,10 +147,6 @@ main.faq-main {
   html {
     font-size: 85%;
   }
-
-  body {
-    margin-bottom: 30rem;
-   }
 
   header.faq-header {
     height: 40vh;
@@ -169,10 +161,6 @@ main.faq-main {
   html {
     font-size: 87%;
   }
-
-  body {
-    margin-bottom: 35rem;
-   }
 
   header.faq-header {
     height: 40vh;
