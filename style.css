@@ -73,7 +73,6 @@ main.faq-main {
   margin-left: 2rem;
 }
 
-
 .question {
   display: flex;
   justify-content: space-between;
@@ -113,6 +112,10 @@ main.faq-main {
 
 .show {
   display: block;
+}
+
+.minus-svg {
+  display: none;
 }
 
 .underline {
